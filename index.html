@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Price widget oop</title>
+    <link rel="stylesheet" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+    <script src="script/script.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="mainBlock">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="well well-lg">
+                    <h1>Minimum</h1>
+
+                    <p>Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст..</p>
+                    <div class="text-center">
+                        <button id="econom" type="button" class="btn btn-info priceWidget-order" value="100">100 usd</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="well well-lg" style="background-color:lavender;">
+                    <h1>Medium</h1>
+
+                    <p>Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения.</p>
+                    <div class="text-center">
+                        <button type="button" id="medium" class="btn btn-info priceWidget-order" value="200">200 usd</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="well well-lg" style="background-color:lavenderblush;">
+                    <h1>Premium</h1>
+
+                    <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах.</p>
+                    <div class="text-center">
+                        <button type="button" id="premium" class="btn btn-info priceWidget-order" value="300">300 usd</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 text-center">
+            <p>Перевести в удобную для вас валюту
+                <select id="currencyType">
+                    <option value="usd" class="priceWidgetOption">доллары</option>
+                    <option value="hrn" class="priceWidgetOption">гривны</option>
+                    <!--22.5 hrn=1 $-->
+                    <option value="ru" class="priceWidgetOption">рубли</option>
+                    <!--68.49 рубль=1 $-->
+                    <option value="euro" class="priceWidgetOption">евро</option>
+                    <!-- 0.9 евро=1 $-->
+                    <option value="yen" class="priceWidgetOption">китайские юани</option>
+                    <!--6.36 юань=1 $-->
+                    <option value="bitcoin" class="priceWidgetOption">биткоины</option>
+                    <!--0.0041 биткоин=1 $-->
+                </select>
+            </p>
+            <input type="button" value="order" id="order" class="btn btn-success" />
+        </div>
+</body>
+</html>
